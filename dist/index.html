@@ -1,11 +1,281 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Modern Portfolio</title>
-    </head>
-    <body>
-        <h1>Updated Portfolio</h1>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob The Dev</title>
+    <meta name="description" content="This is the portfolio and online resume of Jacob Lopez, a full stack web developer">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script defer src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>The Nav</h4>
+      </div>
+      <button class="navToggle">&#9776;</button>
+    </nav>
+    <header>
+      <h1>Code what matters</h1>
+    </header>
+    <aside class="sideNav inactive">
+      <ul class="nav-links">
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li>
+          <a href="#education" class="nav-link">Education</a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-link">Resume</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <article>
+          <p>Full Stack Web Developer based in Chicago</p>
+        </article>
+      </section>   
+      <section id="experience">
+        <h2>Experience</h2>
+        <article>
+        <!--Job 1-->
+        <div class="card">
+          <!--Top row-->
+          <div class="card-top" id="infoTech-top">
+            <h3>Chicago Info Tech</h3>
+            <p>Lead Tech</p>
+          </div>
+          <!--Content-->
+          <div class="card-content">
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>
+                <p>
+                  Design, develop, and maintain websites leveraging the WordPress CMS
+                </p>
+              </li>
+              <li>
+                <p>
+                  Training and integration of new employees, remotely and in person
+                </p>
+              </li>
+              <li>
+                <p>
+                  Develop and maintain client relationships to understand, meet, and exceed their business needs
+                </p>
+              </li>
+            </ul>
+            <br>
+            <h4>Accomplishments</h4>
+            <ul>
+              <li>
+                <p>Designed and developed website for Verde Wellness</p>
+              </li>
+              <li>
+                <p>Designed and devloped website for local engineer union</p>
+              </li>
+            </ul>
+          </div>
+          <!--bottom-->
+          <div class="card-bottom">
+              <p>Oct 2016 - Current</p>
+              <p>Chicago, IL</p>
+          </div>
+        </div>
+        
+        <!--Job 2-->
+        <div class="card">
+          <div class="card-top" id="cna-top">
+            <h3>CNA Insurance</h3>
+            <p>Intern</p>
+          </div>
+          <div class="card-content">
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>
+                <p>Meet with developers to discuss the implimentation of an application company wide, and plans to deploy it.</p>
+              </li>
+              <li>
+                <p>Compile information, attend meetings and present information to project managers.</p>
+              </li>
+              <li>
+                <p>Create detailed presentation for board memebers.</p>
+              </li>
+            </ul>
+            <br>
+            <h4>Accomplishments</h4>
+            <ul>
+              <li>
+                <p>Presented to CIO and project managers the software that would be implimented, and how it would improve efficiency company wide.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card-bottom">
+            <p>May 2016 - June 2016</p>
+            <p>Chicago, IL</p>
+          </div>
+        </div>
+      </article>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <article id="project-list">
+          <div class="project-card">
+            <div class="card-top" id="project1">
+              <h3>Project name</h3>
+            </div>
+            <div class="project-card-content">
+              <img src="./images/cover.png" class="project-image" alt="project1">
+              <p>Words describing project</p>
+            </div>
+            <div class="card-bottom">
+             <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+             <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-top" id="project1">
+              <h3>Project name</h3>
+            </div>
+            <div class="project-card-content">
+              <img src="./images/cover.png" class="project-image" alt="project1">
+              <p>Words describing project</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-top" id="project1">
+              <h3>Project name</h3>
+            </div>
+            <div class="project-card-content">
+              <img src="./images/cover.png" class="project-image" alt="project1">
+              <p>Words describing project</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-top" id="project1">
+              <h3>Project name</h3>
+            </div>
+            <div class="project-card-content">
+              <img src="./images/cover.png" class="project-image" alt="project1">
+              <p>Words describing project</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+          
+        </article>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <article>
+        <div class="card">
+          <div class="card-top" id="depaul-top">
+            <h3>DePaul University</h3>
+            <p>Chicago, IL</p>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>
+                <p>B.S. in computer Science</p>
+              </li>
+              <li>
+                <p>Minor: Software Engineering</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card-bottom">
+            <p>
+              Class of 2019
+            </p>
+          </div>
+        </div>
+      </article>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <article>
+        <!--Card begin-->
+        <div class="skill-card">
+          <!--Top row-->
+          <div class="card-top" id="frontend-top">
+              <h3>Frontend</h2>
+          </div>
+          <!--Content-->
+          <div class="skill-card-content">
+              <div class="skill-icon">
+                  <figure>
+                      <img class="icon" src="./images/icons/html5.png">
+                      <figcaption>HTML5</figcaption>
+                    </figure>
+              </div>
+              <div class="skill-icon">
+                  <figure>
+                      <img class="icon" src="./images/icons/css3.png">
+                      <figcaption>CSS3</figcaption>
+                    </figure>
+              </div>
+              <div class="skill-icon">
+                  <figure>
+                      <img class="icon" src="./images/icons/javascript.png">
+                      <figcaption>JavaScript</figcaption>
+                    </figure>
+              </div>
+              <div class="skill-icon">
+                  <figure>
+                      <img class="icon" src="./images/icons/bootstrap.png">
+                      <figcaption>Bootstrap</figcaption>
+                    </figure>
+              </div>
+          </div>
+        </div>
+      <!--Card end-->
+    </article>
+      </section>
+      <section id="resume">
+        <h2>Formal Resume</h2>
+        <article>
+          <p>Here there will be a link or download button for my formal resume</p>
+        </article>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <article>
+          <p>Either a contact form, or simply list contact info</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+      <div class="social-media">
+        <p>Social media icons may appear here.</p>
+      </div>
+    </footer>
+  </body>
 </html>
