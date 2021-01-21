@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script defer src="./scripts/script.js"></script>
+    <script defer src="scripts/form.js"></script>
+    
   </head>
   <body>
     <nav>
@@ -267,7 +269,25 @@
       <section id="contact">
         <h2>Contact</h2>
         <article>
-          <p>Either a contact form, or simply list contact info</p>
+          <div class="form-card">
+            <div class="card-top" id="form-top">
+              <h3>Send an Email</h3>
+            </div>
+            <div class="form-card-content">
+              <form id="contact-form">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name">
+
+                <label for="mail">Email: </label>
+                <input type="text" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="msg" name="message"></textarea>
+
+                <button type="submit" class="submit-btn">Send your message</button>
+              </form>
+            </div>
+          </div>
         </article>
       </section>
     </main>
