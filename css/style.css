@@ -239,6 +239,48 @@ figure figcaption {
     background-color: #839b97;
 }
 
+/*Contact card*/
+
+.form-card{
+    width: 80%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background-color: white;
+    border-radius: 25px;
+}
+
+.form-card-content{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1em;
+    width: 75%;
+}
+
+#form-top{
+    background-color: #55A3D6;
+}
+
+label{
+    grid-column: 1/2;
+    text-align: right;
+}
+
+input, button{
+    grid-column: 2/3;
+}
+
+button{
+
+}
 
 /*Mobile layouts*/
 @media screen and (max-width: 550px){
