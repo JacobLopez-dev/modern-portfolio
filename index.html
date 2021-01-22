@@ -8,9 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script defer src="./scripts/script.js"></script>
-    <script defer src="scripts/form.js"></script>
-    
+    <script defer src="./scripts/script.js"></script>    
   </head>
   <body>
     <nav>
@@ -43,15 +41,25 @@
           <a href="#resume" class="nav-link">Resume</a>
         </li>
         <li>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#connect" class="nav-link">Connect</a>
         </li>
       </ul>
     </aside>
     <main>
       <section id="about">
         <h2>About</h2>
-        <article>
-          <p>Full Stack Web Developer based in Chicago</p>
+        <article class="about"> 
+            <p>
+                <span>Goal oriented full stack developer on a mission to make a difference by leveraging modern technologies to design and develop the applications of the future.</span>
+            </p><br>
+            <p>
+              Hi, I'm Jacob, a full stack web developer based in Chicago, IL. We didn't always have a computer in the house but once we did I was instantly captivated by technology.
+              I sat in awe as I explored our new Gateway PC for the first time, doing anything I could to figure out how it worked. As the technology grew, I grew with it. After building my first few simple sites, 
+              I knew this was something I wanted to pursue.
+            </p><br>
+            <p>
+              With the wealth of knowledge I've acquired through my Computer Science degree, 5 years of professional experience in the IT space, an eye for design and mind for problem solving, I hope to jump start a career as a Full Stack Web Developer. But most importantly, code what matters.
+            </p>
         </article>
       </section>   
       <section id="experience">
@@ -147,9 +155,15 @@
               <img src="./images/cover.png" class="project-image" alt="project1">
               <p>Words describing project</p>
             </div>
-            <div class="card-bottom">
-             <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
-             <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <div class="project-card-bottom">
+              <ul>
+                <li class="tooltip swing" data-title="View Source">
+                  <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="tooltip swing" data-title="View Live">
+                  <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
+                </li>
+              </ul>
             </div>
           </div>
           <div class="project-card">
@@ -160,9 +174,15 @@
               <img src="./images/cover.png" class="project-image" alt="project1">
               <p>Words describing project</p>
             </div>
-            <div class="card-bottom">
-              <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
-              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <div class="project-card-bottom">
+              <ul>
+                <li class="tooltip swing" data-title="View Source">
+                  <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="tooltip swing" data-title="View Live">
+                  <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
+                </li>
+              </ul>
             </div>
           </div>
           <div class="project-card">
@@ -173,9 +193,15 @@
               <img src="./images/cover.png" class="project-image" alt="project1">
               <p>Words describing project</p>
             </div>
-            <div class="card-bottom">
-              <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
-              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <div class="project-card-bottom">
+              <ul>
+                <li class="tooltip swing" data-title="View Source">
+                  <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="tooltip swing" data-title="View Live">
+                  <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
+                </li>
+              </ul>
             </div>
           </div>
           <div class="project-card">
@@ -186,9 +212,15 @@
               <img src="./images/cover.png" class="project-image" alt="project1">
               <p>Words describing project</p>
             </div>
-            <div class="card-bottom">
-              <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
-              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <div class="project-card-bottom">
+              <ul>
+                <li class="tooltip swing" data-title="View Source">
+                  <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="tooltip swing" data-title="View Live">
+                  <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
+                </li>
+              </ul>
             </div>
           </div>
           
@@ -263,13 +295,24 @@
       <section id="resume">
         <h2>Formal Resume</h2>
         <article>
-          <p>Here there will be a link or download button for my formal resume</p>
+          <div class="resume">
+            <div class="card">
+              <div class="card-top" id="resume-top">
+                <h3>Most Recent</h3>
+              </div>
+              <div class="card-content">
+                <p>Click the button below to get a copy of my most up to date resume</p>
+                <button class="btn fourth">Download</button>
+              </div>
+            </div>          
+          </div>
+        </div>
         </article>
       </section>
-      <section id="contact">
-        <h2>Contact</h2>
+      <section id="connect">
+        <h2>Connect</h2>
         <article>
-         
+          <p>This is the connect section</p>
         </article>
       </section>
     </main>
