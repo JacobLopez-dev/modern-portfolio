@@ -71,8 +71,9 @@ nav{
 }
 
 .nav-link:hover{
-    background-color: #839b97;
+    background-color: #ffffff88;
     border-radius: 10px;
+    color: black;
 }
 
 .logo{
@@ -179,6 +180,23 @@ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 #depaul-top{
     background-color: #225B94;
 }
+
+/*Education*/
+.education ul{
+    list-style: none;
+}
+
+.education li:first-child{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    width: fit-content;
+}
+
+.education li:nth-child(2){
+    margin-top: 20px;
+    line-height: 30px;
+}
 /*Skill card*/
 .skill-card{
     width: 80%;
@@ -202,7 +220,7 @@ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
 .skill-icon .icon{
     height: 100px;
-    width: 100px;
+    width: 105px;
 }
 
 figure {
@@ -241,6 +259,7 @@ figure figcaption {
     height: 150px;
 }
 
+
 .project-card-bottom{
     display: flex;
     flex-direction: row;
@@ -252,17 +271,26 @@ figure figcaption {
 }
 
 .project-card-bottom i{
-    padding-left: 20px;
+    padding-left: 10px;
+    color: #23ae58;
 }
 
 .project-card-bottom i:hover{
-    color: green;
+    color: #24292E;
 }
 
 .project-card-bottom li {
     cursor: pointer; 
     display: inline-block; 
   }
+
+#project1{
+    background-color:#23ae58 ;
+}
+
+#project2{
+    background-color: #839b97;
+}
 
 /* setup tooltips */
 .tooltip {
@@ -311,13 +339,7 @@ figure figcaption {
   transform: translate3d(0,0,0) rotate3d(1,1,1,0deg);
 }
 
-#project1{
-    background-color:#23ae58 ;
-}
 
-#project2{
-    background-color: #839b97;
-}
 
 /*Resume card + btn*/
 .resume .card-content{
@@ -360,9 +382,9 @@ figure figcaption {
   }
 
   .download{
-  border-color: #0ff122;
+  border-color: green;
   color: #fff;
-  background-image: linear-gradient(45deg, #0f31f1 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #272727 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   transition: 300ms ease-in-out;
@@ -414,7 +436,7 @@ figure figcaption {
         height: 10vh;
         padding: 2em;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
-        background-color: #23ae58;
+        background-color: #23ae61;
         z-index: 9;
     }
 
