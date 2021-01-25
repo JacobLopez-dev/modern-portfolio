@@ -153,76 +153,80 @@
             </div>
             <div class="project-card-content">
               <img src="./images/cover.png" class="project-image" alt="project1">
+              <div class="project-description inactive-project"> 
+                <p>Words describing project</p>
+              </div>
+            </div>
+            <div class="project-card-bottom">
+              <ul>
+                <li class="tooltip-project swing" data-title="View Source">
+                  <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="tooltip-project swing" data-title="View Live">
+                  <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-top" id="project2">
+              <h3>Project name</h3>
+            </div>
+            <div class="project-card-content">
+              <img src="./images/cover.png" class="project-image" alt="project2">
               <div class="project-description"> 
                 <p>Words describing project</p>
               </div>
             </div>
             <div class="project-card-bottom">
               <ul>
-                <li class="tooltip swing" data-title="View Source">
+                <li class="tooltip-project swing" data-title="View Source">
                   <a href="#"><i class="fab fa-github fa-2x"></i></a>
                 </li>
-                <li class="tooltip swing" data-title="View Live">
+                <li class="tooltip-project swing" data-title="View Live">
                   <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
                 </li>
               </ul>
             </div>
           </div>
           <div class="project-card">
-            <div class="card-top" id="project1">
+            <div class="card-top" id="project3">
               <h3>Project name</h3>
             </div>
             <div class="project-card-content">
-              <img src="./images/cover.png" class="project-image" alt="project1">
-              <p>Words describing project</p>
+              <img src="./images/cover.png" class="project-image" alt="project3">
+              <div class="project-description"> 
+                <p>Words describing project</p>
+              </div>
             </div>
             <div class="project-card-bottom">
               <ul>
-                <li class="tooltip swing" data-title="View Source">
+                <li class="tooltip-project swing" data-title="View Source">
                   <a href="#"><i class="fab fa-github fa-2x"></i></a>
                 </li>
-                <li class="tooltip swing" data-title="View Live">
+                <li class="tooltip-project swing" data-title="View Live">
                   <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
                 </li>
               </ul>
             </div>
           </div>
           <div class="project-card">
-            <div class="card-top" id="project1">
+            <div class="card-top" id="project4">
               <h3>Project name</h3>
             </div>
             <div class="project-card-content">
-              <img src="./images/cover.png" class="project-image" alt="project1">
-              <p>Words describing project</p>
+              <img src="./images/cover.png" class="project-image" alt="project4">
+                <p class="project-description inactive-project">
+                  <b>Stack:</b>NodeJs, EJS, mongoDB<br><br>
+                  <b>Description:</b> My Journal is a simple blogging app that allows users 
+                </p>
             </div>
             <div class="project-card-bottom">
               <ul>
-                <li class="tooltip swing" data-title="View Source">
+                <li class="tooltip-project swing" data-title="View Source">
                   <a href="#"><i class="fab fa-github fa-2x"></i></a>
                 </li>
-                <li class="tooltip swing" data-title="View Live">
-                  <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="card-top" id="project1">
-              <h3>Project name</h3>
-            </div>
-            <div class="project-card-content">
-              <img src="./images/cover.png" class="project-image" alt="project1">
-              <p>
-                <b>Stack:</b>NodeJs, EJS, mongoDB<br><br>
-                <b>Description:</b> My Journal is a simple blogging app that allows users 
-              </p>
-            </div>
-            <div class="project-card-bottom">
-              <ul>
-                <li class="tooltip swing" data-title="View Source">
-                  <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                </li>
-                <li class="tooltip swing" data-title="View Live">
+                <li class="tooltip-project swing" data-title="View Live">
                   <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>             
                 </li>
               </ul>
@@ -269,44 +273,39 @@
         <div class="skill-card">
           <!--Top row-->
           <div class="card-top" id="frontend-top">
-              <h3>Frontend</h2>
+              <h3>Frontend</h3>
           </div>
           <!--Content-->
           <div class="skill-card-content">
               <div class="skill-icon">
-                  <figure>
+                  <figure class="tooltip-skill fade" data-title="HTML5">
                       <img class="icon" src="./images/icons/html5.png">
-                      <figcaption>HTML5</figcaption>
+                      <!--<figcaption>HTML5</figcaption>-->
                     </figure>
               </div>
               <div class="skill-icon">
-                  <figure>
+                  <figure class="tooltip-skill fade" data-title="CSS3">
                       <img class="icon" src="./images/icons/css3.png">
-                      <figcaption>CSS3</figcaption>
                     </figure>
               </div>
               <div class="skill-icon">
-                  <figure>
-                      <img class="icon" src="./images/icons/javascript.png">
-                      <figcaption>JavaScript</figcaption>
-                    </figure>
+                  <figure class="tooltip-skill fade" data-title="JavaScript">
+                    <img class="icon" src="./images/icons/javascript.png">
+                  </figure>
               </div>
               <div class="skill-icon">
-                <figure>
+                <figure class="tooltip-skill fade" data-title="Angular">
                     <img class="icon" src="./images/icons/angular.png">
-                    <figcaption>Angular</figcaption>
                   </figure>
             </div>
             <div class="skill-icon">
-              <figure>
+              <figure class="tooltip-skill fade" data-title="React">
                   <img class="icon" src="./images/icons/react.png">
-                  <figcaption>React</figcaption>
                 </figure>
           </div>
               <div class="skill-icon">
-                  <figure>
+                  <figure class="tooltip-skill fade" data-title="Bootstrap">
                       <img class="icon" src="./images/icons/bootstrap.png">
-                      <figcaption>Bootstrap</figcaption>
                     </figure>
               </div>
           </div>
@@ -315,73 +314,65 @@
       <!--Card begin Backend-->
       <div class="skill-card">
         <!--Top row-->
-        <div class="card-top" id="frontend-top">
-            <h3>Backend</h2>
+        <div class="card-top" id="backend-top">
+            <h3>Backend</h3>
         </div>
         <!--Content-->
         <div class="skill-card-content">
             <div class="skill-icon">
-                <figure>
+                <figure class="tooltip-skill fade" data-title="NodeJs">
                     <img class="icon" src="./images/icons/nodejs.png">
-                    <figcaption>NodeJs</figcaption>
                   </figure>
             </div>
             <div class="skill-icon">
-                <figure>
+                <figure class="tooltip-skill fade" data-title="Express">
                     <img class="icon" src="./images/icons/expressjs.png">
-                    <figcaption>Express Js</figcaption>
                   </figure>
             </div>
             <div class="skill-icon">
-              <figure>
+              <figure class="tooltip-skill fade" data-title="GCP">
                   <img class="icon" src="./images/icons/gcp.png">
-                  <figcaption>Google Cloud</figcaption>
                 </figure>
           </div>
             <div class="skill-icon">
-                <figure>
+                <figure class="tooltip-skill fade" data-title="MongoDB">
                     <img class="icon" src="./images/icons/mongodb.png">
-                    <figcaption>MongoDB</figcaption>
                   </figure>
             </div>
             <div class="skill-icon">
-              <figure>
+              <figure class="tooltip-skill fade" data-title="Firestore">
                   <img class="icon" src="./images/icons/firestore.png">
-                  <figcaption>Firestore</figcaption>
                 </figure>
           </div>
         </div>
       </div>
     <!--Card end-->
-          <!--Card begin Other-->
-          <div class="skill-card">
-            <!--Top row-->
-            <div class="card-top" id="frontend-top">
-                <h3>Other</h2>
-            </div>
-            <!--Content-->
-            <div class="skill-card-content">
-                <div class="skill-icon">
-                    <figure>
-                        <img class="icon" src="./images/icons/github.png">
-                        <figcaption>Github</figcaption>
-                      </figure>
-                </div>
-                <div class="skill-icon">
-                    <figure>
-                        <img class="icon" src="./images/icons/heroku.png">
-                        <figcaption>Heroku</figcaption>
-                      </figure>
-                </div>
-                <div class="skill-icon">
-                  <figure>
-                      <img class="icon" src="./images/icons/wordpress.png">
-                      <figcaption>Wordpress</figcaption>
-                    </figure>
-              </div>
-            </div>
+    <!--Card begin Other-->
+      <div class="skill-card">
+        <!--Top row-->
+        <div class="card-top" id="other-top">
+          <h3>Other</h3>
+        </div>
+        <!--Content-->
+        <div class="skill-card-content">
+        <div class="skill-icon">
+          <figure class="tooltip-skill fade" data-title="Github">
+            <img class="icon" src="./images/icons/github.png">
+          </figure>
+        </div>
+        <div class="skill-icon">
+          <figure class="tooltip-skill fade" data-title="Heroku">
+            <img class="icon" src="./images/icons/heroku.png">
+          </figure>
           </div>
-        <!--Card end-->
+          <div class="skill-icon">
+            <figure class="tooltip-skill fade" data-title="WordPress">
+              <img class="icon" src="./images/icons/wordpress.png"> 
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!--Card end-->
     </article>
       </section>
       <section id="resume">
@@ -396,8 +387,7 @@
                 <p>Interested in a more formal resume? Click the button to begin a download of my most up to date resume!</p>
                 <button class="btn download">Download</button>
               </div>
-            </div>          
-          </div>
+          </div>          
         </div>
         </article>
       </section>
