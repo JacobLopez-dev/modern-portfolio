@@ -1,11 +1,14 @@
 const menuBtn = document.querySelector('.navToggle');
 const sideNav = document.querySelector('.sideNav');
-const navLinks = document.querySelector('.nav-links')
+const navLink = document.querySelector('.nav-links')
+const projectImg = document.querySelector('.project-image');
+const projectDesc = document.querySelector('.project-description');
 
-menuBtn.addEventListener('click', myFunction);
-navLinks.addEventListener('click', myFunction2);
+menuBtn.addEventListener('click', navActivation);
+navLink.addEventListener('click', navClose);
+//projectImg.addEventListener('click', )
 
-function myFunction(){
+function navActivation(){
     if(sideNav.className === 'sideNav inactive'){
         sideNav.classList.remove('inactive');
         sideNav.classList.add('active');
@@ -15,7 +18,11 @@ function myFunction(){
     }
 }
 
-function myFunction2(){
+//function displayDesc(){
+
+//}
+
+function navClose(){
     if(sideNav.className === 'sideNav active'){
         sideNav.classList.remove('active');
         sideNav.classList.add('inactive');
