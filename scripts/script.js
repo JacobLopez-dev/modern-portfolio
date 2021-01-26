@@ -1,12 +1,12 @@
 const menuBtn = document.querySelector('.navToggle');
 const sideNav = document.querySelector('.sideNav');
 const navLink = document.querySelector('.nav-links')
-const projectImg = document.querySelector('.project-image');
+const projectBtn = document.querySelector('.project-btn');
 const projectDesc = document.querySelector('.project-description');
 
 menuBtn.addEventListener('click', navActivation);
 navLink.addEventListener('click', navClose);
-//projectImg.addEventListener('click', )
+projectBtn.addEventListener('click', displayDesc);
 
 function navActivation(){
     if(sideNav.className === 'sideNav inactive'){
@@ -18,9 +18,15 @@ function navActivation(){
     }
 }
 
-//function displayDesc(){
-
-//}
+function displayDesc(){
+    if(projectDesc.className === 'project-description'){
+        projectDesc.classList.add('hide')
+    }else if(projectDesc.className === 'project-description hide'){
+        projectDesc.classList.remove('hide')
+    }else{
+        projectDesc.classList.add('hide')
+    }
+}
 
 function navClose(){
     if(sideNav.className === 'sideNav active'){

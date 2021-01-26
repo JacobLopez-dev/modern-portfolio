@@ -278,7 +278,7 @@ figure figcaption {
     padding: 1em;
 }
 
-.project-card-content:hover > .project-description{
+.hide{
     top: 0;
 }
 
@@ -292,9 +292,15 @@ figure figcaption {
     flex-direction: row;
     justify-content: flex-end;
     padding: .5em;
-    background-color: #eeeeee;
+    background-color: #cfcfcf;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.project-btn{
+    background: transparent;
+    border: none;
+    margin-right: 150px;
 }
 
 .project-card-bottom i{
@@ -529,7 +535,7 @@ figure figcaption {
         padding: 2em;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
         background-color: #23ae61;
-        z-index: 9;
+        z-index: 999;
     }
 
     .navToggle{
@@ -541,6 +547,7 @@ figure figcaption {
 
     .sideNav{
         top: 10vh;
+        z-index: 999;
     }
 
     .inactive{
