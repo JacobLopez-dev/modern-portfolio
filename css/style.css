@@ -301,14 +301,16 @@ figure figcaption {
     background: transparent;
     border: none;
     margin-right: 150px;
+    cursor: pointer; 
 }
 
 .project-card-bottom i{
-    padding-left: 10px;
     color: #23ae58;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.project-card-bottom i:hover{
+.tooltip-project i:hover{
     color: #24292E;
 }
 

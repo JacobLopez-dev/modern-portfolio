@@ -3,6 +3,7 @@ const sideNav = document.querySelector('.sideNav');
 const navLink = document.querySelector('.nav-links')
 const projectBtn = document.querySelector('.project-btn');
 const projectDesc = document.querySelector('.project-description');
+const projectIcon = document.querySelector('.project-icon');
 
 menuBtn.addEventListener('click', navActivation);
 navLink.addEventListener('click', navClose);
@@ -25,6 +26,14 @@ function displayDesc(){
         projectDesc.classList.remove('hide')
     }else{
         projectDesc.classList.add('hide')
+    }
+
+    if(projectIcon.classList.contains("fa-arrow-up")){
+        projectIcon.classList.remove("fa-arrow-up");
+        projectIcon.classList.add("fa-arrow-down");
+    }else{
+        projectIcon.classList.remove("fa-arrow-down");
+        projectIcon.classList.add("fa-arrow-up");
     }
 }
 
