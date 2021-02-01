@@ -301,13 +301,14 @@ figure figcaption {
     background: transparent;
     border: none;
     margin-right: 150px;
-    cursor: pointer; 
+
 }
 
 .project-card-bottom i{
     color: #23ae58;
     margin-right: 5px;
     margin-left: 5px;
+    cursor: pointer; 
 }
 
 .tooltip-project i:hover{
@@ -315,7 +316,6 @@ figure figcaption {
 }
 
 .project-card-bottom li {
-    cursor: pointer; 
     display: inline-block; 
   }
 

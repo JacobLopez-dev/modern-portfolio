@@ -1,14 +1,17 @@
 const menuBtn = document.querySelector('.navToggle');
+menuBtn.addEventListener('click', navActivation);
+
+const navLink = document.querySelector('.nav-links');
+navLink.addEventListener('click', navClose);
+
+//const projectBtn = document.querySelector('.project-btn');
+//projectBtn.addEventListener('click', displayDesc);
+
 const sideNav = document.querySelector('.sideNav');
-const navLink = document.querySelector('.nav-links')
-const projectBtn = document.querySelector('.project-btn');
 const projectDesc = document.querySelector('.project-description');
 const projectIcon = document.querySelector('.project-icon');
 
-menuBtn.addEventListener('click', navActivation);
-navLink.addEventListener('click', navClose);
-projectBtn.addEventListener('click', displayDesc);
-
+//Open and close nav on menu btn click currently only works on the first element
 function navActivation(){
     if(sideNav.className === 'sideNav inactive'){
         sideNav.classList.remove('inactive');
@@ -19,6 +22,15 @@ function navActivation(){
     }
 }
 
+//Close side nav on link click
+function navClose(){
+    if(sideNav.className === 'sideNav active'){
+        sideNav.classList.remove('active');
+        sideNav.classList.add('inactive');
+    }
+}
+/*
+//Display project description on click
 function displayDesc(){
     if(projectDesc.className === 'project-description'){
         projectDesc.classList.add('hide')
@@ -36,10 +48,34 @@ function displayDesc(){
         projectIcon.classList.add("fa-arrow-up");
     }
 }
+*/
+const projectCards = document.querySelectorAll('.project-card');
+for(const projectCard of projectCards){
+    projectCard.addEventListener('click', (e) =>{
+        let target = e.target;
+        if(target.classList[0] !== 'project-icon') return;
+        arrowFlip(target)
+    })
+}
 
-function navClose(){
-    if(sideNav.className === 'sideNav active'){
-        sideNav.classList.remove('active');
-        sideNav.classList.add('inactive');
+function arrowFlip(btn){
+    if(btn.classList.contains("fa-arrow-up")){
+        btn.classList.remove("fa-arrow-up");
+        btn.classList.add("fa-arrow-down");
+    }else{
+        btn.classList.remove("fa-arrow-down");
+        btn.classList.add("fa-arrow-up");
+    }
+}
+
+
+//Display project description on click
+function displayDesc2(desc){
+    if(desc.className === 'project-description'){
+        desc.classList.add('hide')
+    }else if(desc.className === 'project-description hide'){
+        desc.classList.remove('hide')
+    }else{
+        desc.classList.add('hide')
     }
 }
