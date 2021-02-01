@@ -4,9 +4,6 @@ menuBtn.addEventListener('click', navActivation);
 const navLink = document.querySelector('.nav-links');
 navLink.addEventListener('click', navClose);
 
-//const projectBtn = document.querySelector('.project-btn');
-//projectBtn.addEventListener('click', displayDesc);
-
 const sideNav = document.querySelector('.sideNav');
 const projectDesc = document.querySelector('.project-description');
 const projectIcon = document.querySelector('.project-icon');
@@ -29,32 +26,19 @@ function navClose(){
         sideNav.classList.add('inactive');
     }
 }
-/*
-//Display project description on click
-function displayDesc(){
-    if(projectDesc.className === 'project-description'){
-        projectDesc.classList.add('hide')
-    }else if(projectDesc.className === 'project-description hide'){
-        projectDesc.classList.remove('hide')
-    }else{
-        projectDesc.classList.add('hide')
-    }
 
-    if(projectIcon.classList.contains("fa-arrow-up")){
-        projectIcon.classList.remove("fa-arrow-up");
-        projectIcon.classList.add("fa-arrow-down");
-    }else{
-        projectIcon.classList.remove("fa-arrow-down");
-        projectIcon.classList.add("fa-arrow-up");
-    }
-}
-*/
 const projectCards = document.querySelectorAll('.project-card');
 for(const projectCard of projectCards){
+    //console.log(projectCard);
+    let chldNodes = projectCard.children;
+    let description = chldNodes[1].firstElementChild;
+    
     projectCard.addEventListener('click', (e) =>{
         let target = e.target;
+        console.log(target)
         if(target.classList[0] !== 'project-icon') return;
-        arrowFlip(target)
+        arrowFlip(target);
+        displayDesc2(description);
     })
 }
 
