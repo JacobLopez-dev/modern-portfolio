@@ -66,14 +66,17 @@ nav{
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    padding: 1em;
+    padding: 1.5em;
 
 }
 
 .nav-link:hover{
-    background-color: #ffffff88;
     border-radius: 10px;
-    color: black;
+    background: rgba(34, 28, 28, 0.315);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .logo{
@@ -266,16 +269,27 @@ figure figcaption {
     overflow: hidden;
 }
 
-.project-description{    
+/*.project-description{    
+
+
+    background-color: white;
+}*/
+
+.project-description{
+    background: rgba(228, 228, 228, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     top: 100%;
     position: relative;
     transition: all .3s ease-out;
     height: 100%;
-    background-color: white;
 }
 
 .project-description p{
     padding: 1em;
+    color: white;
 }
 
 .hide{
@@ -535,9 +549,12 @@ figure figcaption {
         width: 100%;
         height: 10vh;
         padding: 2em;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
-        background-color: #23ae61;
         z-index: 999;
+        background: rgba(34, 28, 28, 0.315);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
     .navToggle{
