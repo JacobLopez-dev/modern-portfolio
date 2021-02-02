@@ -441,14 +441,11 @@ figure figcaption {
     transform: translate3d(0,0,0);
 }
 
-
-
-
 /*Resume card + btn*/
 .resume .card-content{
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 25px auto 25px auto;
 }
 
@@ -457,9 +454,6 @@ figure figcaption {
     font-weight: 500;
 }
 
-.resume button{
-    justify-self: center;
-}
 
 #resume-top{
     background-color: #55A3D6;
@@ -474,8 +468,10 @@ figure figcaption {
     font-weight: 400;
     text-decoration: none;
     padding: 1.2em 2.8em;
+    margin-top: 15px;
     font-weight: 700;
     width: fit-content;
+    justify-self: center;
   }
 
   .btn:hover, .btn:focus {
@@ -538,7 +534,6 @@ figure figcaption {
         "sideNav header"
         "sideNav main"
         "sideNav main";
-
     }
 
     nav{
