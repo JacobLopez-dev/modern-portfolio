@@ -1,9 +1,11 @@
+//Buttons, links and their event listeners
 const menuBtn = document.querySelector('.navToggle');
 menuBtn.addEventListener('click', navActivation);
 
 const navLink = document.querySelector('.nav-links');
 navLink.addEventListener('click', navClose);
 
+//Grab a few elements
 const sideNav = document.querySelector('.sideNav');
 const projectDesc = document.querySelector('.project-description');
 const projectIcon = document.querySelector('.project-icon');
@@ -27,9 +29,9 @@ function navClose(){
     }
 }
 
+//Add event delgation to the project card elements
 const projectCards = document.querySelectorAll('.project-card');
 for(const projectCard of projectCards){
-    //console.log(projectCard);
     let chldNodes = projectCard.children;
     let description = chldNodes[1].firstElementChild;
     
@@ -42,6 +44,7 @@ for(const projectCard of projectCards){
     })
 }
 
+//Flip arrow on click
 function arrowFlip(btn){
     if(btn.classList.contains("fa-arrow-up")){
         btn.classList.remove("fa-arrow-up");
