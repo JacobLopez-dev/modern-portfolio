@@ -41,7 +41,7 @@ nav{
 
 .sideNav{
     grid-area: sideNav;
-    background-color: #2376ae;
+    background-color: #2980b9;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,6 @@ nav{
     display: flex;
     flex-direction: column;
     margin-top: 1em;
-
 }
 
 .nav-links li{
@@ -76,7 +75,7 @@ nav{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
 }
 
 .logo{
@@ -118,7 +117,7 @@ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 .about{
     padding: 2em;
     width: 95%;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .about p:first-child{
@@ -126,6 +125,11 @@ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     border-left: 4px solid black;
     padding: 10px;
 }
+
+.about p:nth-child(n+3){
+   font-size: 18px;
+}
+
 
 /*Cards*/
 .card{
@@ -512,12 +516,13 @@ figure figcaption {
 
 .connect a{
     text-decoration: none;
-    color: #839b95;
+    color: black;
+
 }
 
 .connect a:hover{
     text-decoration: none;
-    color: black;
+    color: #839b95;
 }
 
 
