@@ -7,10 +7,17 @@ navLink.addEventListener('click', navClose);
 
 //Grab a few elements
 const sideNav = document.querySelector('.sideNav');
+const navToggle = document.querySelector('.navToggle');
 const projectDesc = document.querySelector('.project-description');
 const projectIcon = document.querySelector('.project-icon');
 
-//Open and close nav on menu btn click currently only works on the first element
+
+//switch nav icon on click
+navToggle.addEventListener('click', ()=>{
+    navToggle.classList.toggle('active')
+})
+
+//Open and close nav on menu btn click
 function navActivation(){
     if(sideNav.className === 'sideNav inactive'){
         sideNav.classList.remove('inactive');
