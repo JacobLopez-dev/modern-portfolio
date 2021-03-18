@@ -567,7 +567,7 @@ figure figcaption {
         border: none;
         cursor: pointer;
         position: absolute;
-        top: .5em;
+        top: 1em;
         right: 1em;
         height: 50px;
         width: 50px;
