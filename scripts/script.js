@@ -33,6 +33,8 @@ function navClose(){
     if(sideNav.className === 'sideNav active'){
         sideNav.classList.remove('active');
         sideNav.classList.add('inactive');
+        navToggle.classList.toggle('active')
+        
     }
 }
 
