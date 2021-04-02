@@ -34,7 +34,6 @@ function navClose(){
         sideNav.classList.remove('active');
         sideNav.classList.add('inactive');
         navToggle.classList.toggle('active')
-        
     }
 }
 
