@@ -49,25 +49,24 @@ nav{
     width: 200px;
     height: 100vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
-}
-
-.nav-link{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .nav-links li{
     list-style: none;
 }
 
-.nav-links a{
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
     color: white;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     padding: 1.5em;
-
+    
 }
+
 
 .nav-link:hover{
     border-radius: 10px;
@@ -89,6 +88,8 @@ main{
     background-color: #ebebeb;
 }
 
+
+
 section h2{
     padding: 1em;
     font-weight: 100;
@@ -101,7 +102,7 @@ article{
     margin: 0 auto;
 }
 
-#project-list{
+.project-list{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
@@ -271,12 +272,6 @@ figure figcaption {
     background-size: cover;
     overflow: hidden;
 }
-
-/*.project-description{    
-
-
-    background-color: white;
-}*/
 
 .project-description{
     background: rgba(228, 228, 228, 0.25);
@@ -498,6 +493,7 @@ figure figcaption {
 /*Contact info*/
 .connect{
     padding: 2em;
+    height: 100vh;
 }
 
 .connect ul{
