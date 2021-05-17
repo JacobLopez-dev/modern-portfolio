@@ -40,14 +40,14 @@ header h1 {
 /* Animation */
 .typing-animation {
   animation: typewriter 3s steps(40) 1s 1 normal both,
-    blinkTextCursor 500ms steps(40) infinite normal;
+    blinkTextCursor 600ms steps(40) infinite normal;
 }
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 10em;
+    width: 10.5em;
   }
 }
 @keyframes blinkTextCursor {
@@ -89,7 +89,7 @@ nav {
   color: white;
   text-decoration: none;
   letter-spacing: 3px;
-  padding: 1.5em;
+  padding: 1.2em;
 }
 
 .nav-link:hover {
@@ -116,6 +116,10 @@ section h2 {
   padding: 1em;
   color: white;
   background-color: #839b95;
+}
+
+h4 {
+  font-size: 1.2em;
 }
 
 article {
@@ -469,7 +473,7 @@ figure figcaption {
 
 .resume p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #resume-top {
