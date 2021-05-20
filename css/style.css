@@ -76,6 +76,7 @@ nav {
   height: 100vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
   padding-top: 1em;
+  animation: slideOutFromLeft 0.25s ease-out;
 }
 
 .nav-links li {
@@ -543,6 +544,57 @@ figure figcaption {
   color: #839b95;
 }
 
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutFromLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*Mobile layouts*/
 @media screen and (max-width: 798px) {
   * {
@@ -629,6 +681,7 @@ figure figcaption {
   .sideNav {
     top: 11vh;
     z-index: 999;
+    animation: slideInFromLeft 0.25s ease-in;
   }
 
   .sidenav-logo {
