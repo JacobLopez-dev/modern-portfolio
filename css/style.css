@@ -76,7 +76,6 @@ nav {
   height: 100vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
   padding-top: 1em;
-  animation: slideOutFromLeft 0.25s ease-out;
 }
 
 .nav-links li {
