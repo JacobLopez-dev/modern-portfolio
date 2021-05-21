@@ -37,27 +37,6 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
 }
-/* Animation */
-.typing-animation {
-  animation: typewriter 3s steps(40) 1s 1 normal both,
-    blinkTextCursor 600ms steps(40) infinite normal;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 10.5em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
 
 /*Nav and initial side nav styling*/
 nav {
@@ -502,7 +481,7 @@ figure figcaption {
 }
 
 .download {
-  border-color: green;
+  border-color: rgb(50, 163, 50);
   color: #fff;
   background-image: linear-gradient(45deg, #272727 50%, transparent 50%);
   background-position: 100%;
@@ -591,6 +570,28 @@ figure figcaption {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+.typing-animation {
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 600ms steps(40) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10.5em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
   }
 }
 

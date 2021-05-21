@@ -44,7 +44,6 @@ for (const projectCard of projectCards) {
 
   projectCard.addEventListener('click', (e) => {
     let target = e.target;
-    console.log(target);
     if (target.classList[0] !== 'project-icon') return;
     arrowFlip(target);
     displayDesc2(description);
@@ -53,12 +52,12 @@ for (const projectCard of projectCards) {
 
 //Flip arrow on click
 function arrowFlip(btn) {
-  if (btn.classList.contains('fa-arrow-up')) {
-    btn.classList.remove('fa-arrow-up');
-    btn.classList.add('fa-arrow-down');
+  if (btn.classList.contains('fa-ellipsis-h')) {
+    btn.classList.remove('fa-ellipsis-h');
+    btn.classList.add('fa-times-circle');
   } else {
-    btn.classList.remove('fa-arrow-down');
-    btn.classList.add('fa-arrow-up');
+    btn.classList.remove('fa-times-circle');
+    btn.classList.add('fa-ellipsis-h');
   }
 }
 
