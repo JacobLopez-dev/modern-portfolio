@@ -281,6 +281,10 @@ figure figcaption {
   background-image: url('../images/cloudy.png');
 }
 
+.p2{
+  background-image: url('../images/dynamic.png');
+}
+
 .project-description {
   background: rgba(228, 228, 228, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -291,6 +295,7 @@ figure figcaption {
   position: relative;
   transition: all 0.3s ease-out;
   height: 100%;
+  overflow: scroll;
 }
 
 .project-description p {
