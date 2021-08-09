@@ -531,6 +531,8 @@ figure figcaption {
   color: #839b95;
 }
 
+
+
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -704,4 +706,9 @@ figure figcaption {
   #depaul-top {
     padding: 16px 10px 0px 10px;
   }
+
+  .twitter-feed{
+  display: flex;
+  justify-content: center;
+}
 }
