@@ -505,7 +505,6 @@ figure figcaption {
 /*Contact info*/
 .connect {
   padding: 2em;
-  height: 100vh;
 }
 
 .connect ul {
@@ -529,6 +528,12 @@ figure figcaption {
 .connect a:hover {
   text-decoration: none;
   color: #839b95;
+}
+
+
+.twitter-feed{
+
+  overflow: scroll;
 }
 
 
