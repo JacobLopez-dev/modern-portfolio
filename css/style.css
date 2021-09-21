@@ -281,7 +281,7 @@ figure figcaption {
   background-image: url('../images/cloudy.png');
 }
 
-.p2{
+.p2 {
   background-image: url('../images/dynamic.png');
 }
 
@@ -344,7 +344,7 @@ figure figcaption {
 }
 
 #project1 {
-  background-color: #59C2D6;
+  background-color: #59c2d6;
 }
 
 #project2 {
@@ -490,6 +490,8 @@ figure figcaption {
 }
 
 .download {
+  display: flex;
+  align-items: center;
   border-color: rgb(50, 163, 50);
   color: #fff;
   background-image: linear-gradient(45deg, #272727 50%, transparent 50%);
@@ -530,13 +532,9 @@ figure figcaption {
   color: #839b95;
 }
 
-
-.twitter-feed{
-
+.twitter-feed {
   overflow: scroll;
 }
-
-
 
 /* Animations */
 @keyframes slideInFromLeft {
@@ -712,8 +710,8 @@ figure figcaption {
     padding: 16px 10px 0px 10px;
   }
 
-  .twitter-feed{
-  display: flex;
-  justify-content: center;
-}
+  .twitter-feed {
+    display: flex;
+    justify-content: center;
+  }
 }
