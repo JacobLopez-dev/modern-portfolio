@@ -256,7 +256,7 @@ figure figcaption {
 }
 
 #other-top {
-  background-color: #d6b455;
+  background-color: #7049b8;
 }
 
 /*Projects card*/
@@ -286,17 +286,17 @@ figure figcaption {
 }
 
 .project-description {
-  background: rgba(228, 228, 228, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba( 187, 181, 181, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   top: 100%;
   position: relative;
   transition: all 0.3s ease-out;
   height: 100%;
   overflow: scroll;
 }
+
 
 .project-description p {
   padding: 1em;
@@ -469,7 +469,7 @@ figure figcaption {
 }
 
 .btn {
-  background-color: green;
+  background-color: #49b86a;
   border: 2px solid black;
   border-radius: 15px;
   cursor: pointer;
@@ -507,6 +507,7 @@ figure figcaption {
 /*Contact info*/
 .connect {
   padding: 2em;
+  height: 100vh;
 }
 
 .connect ul {
