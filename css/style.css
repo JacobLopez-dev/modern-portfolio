@@ -46,7 +46,8 @@ nav {
 
 .sideNav {
   grid-area: sideNav;
-  background-color: #2980b9;
+  /* background-color: #2980b9; */
+  background-color: #1A374D;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -88,7 +89,7 @@ nav {
 /*Main content*/
 main {
   grid-area: main;
-  background-color: rgb(247, 236, 224);
+  background-color: #406882;
 }
 
 section h2 {
@@ -104,6 +105,7 @@ h4 {
 article {
   width: inherit;
   margin: 0 auto;
+  color: white;
 }
 
 .project-list {
@@ -142,7 +144,10 @@ article {
   display: grid;
   grid-template-rows: 50px auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  background-color: white;
+  background: rgba( 187, 181, 181, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 25px;
 }
 
@@ -172,7 +177,7 @@ article {
   justify-content: space-between;
   align-items: baseline;
   padding: 1em;
-  background-color: #eeeeee;
+  background-color: rgb(78, 78, 78);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
@@ -216,7 +221,10 @@ article {
   display: grid;
   grid-template-rows: 50px auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  background-color: white;
+  background: rgba( 187, 181, 181, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 25px;
 }
 
@@ -317,7 +325,8 @@ figure figcaption {
   flex-direction: row;
   justify-content: flex-end;
   padding: 0.5em;
-  background-color: #cfcfcf;
+  /* background-color: rgb(78, 78, 78); */
+  background-color:rgb(131, 155, 149);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
@@ -329,7 +338,7 @@ figure figcaption {
 }
 
 .project-card-bottom i {
-  color: #23ae58;
+  color: #406882;
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
