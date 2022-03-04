@@ -95,7 +95,8 @@ main {
 section h2 {
   padding: 1em;
   color: white;
-  background-color: #839b95;
+  /* background-color: #839b95; */
+  background-color: #1A374D;
 }
 
 h4 {
