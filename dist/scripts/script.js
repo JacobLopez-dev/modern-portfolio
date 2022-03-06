@@ -1,3 +1,5 @@
+import { PROJECT_LIST } from "./projects.js";
+
 //Buttons, links and their event listeners
 const menuBtn = document.querySelector('.navToggle');
 menuBtn.addEventListener('click', navActivation);
@@ -10,6 +12,10 @@ const sideNav = document.querySelector('.sideNav');
 const navToggle = document.querySelector('.navToggle');
 const projectDesc = document.querySelector('.project-description');
 const projectIcon = document.querySelector('.project-icon');
+
+// Project template
+const projectTemplate = document.querySelector('#project-template');
+const projectList = document.querySelector('.project-list');
 
 //switch nav icon on click
 navToggle.addEventListener('click', () => {
@@ -35,6 +41,28 @@ function navClose() {
     navToggle.classList.toggle('active');
   }
 }
+
+// Render project cards to tempplate from data file
+function renderProjects(){
+  PROJECT_LIST.forEach(project => {
+    console.log(project)
+    const projectCard = document.importNode(projectTemplate.content, true);
+    const projectHeading = projectCard.querySelector('h3');
+    const projectDescription = projectCard.querySelector('.project-card-description')
+    const sourceLink = projectCard.querySelector('.source-link');
+    const liveLink = projectCard.querySelector('.live-link');
+    const projectImage = projectCard.querySelector('.project-card-content');
+
+    projectHeading.append(project.title);
+    projectDescription.append(project.description);
+    sourceLink.setAttribute('href', `${project.source_code}`);
+    liveLink.setAttribute('href', `${project.live_link}`);
+    projectImage.style.backgroundImage = `url(images/${project.cover_image})`
+    projectList.appendChild(projectCard);
+  })
+}
+
+renderProjects();
 
 //Add event delgation to the project card elements
 const projectCards = document.querySelectorAll('.project-card');
