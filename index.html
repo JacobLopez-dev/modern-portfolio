@@ -178,115 +178,7 @@
     <section id="projects">
       <h2>Projects</h2>
       <article class="project-list">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="card-top" id="project1">
-            <h3>Cloudy</h3>
-          </div>
-          <div class="project-card-content p1">
-            <div class="project-description">
-              <p>Cloudy is a fictional cloud hosting platform. Built with base HTML, CSS3, and JS. Cloudy serves as an
-                example of my ability to design and develop simple websites.</p>
-            </div>
-          </div>
-          <div class="project-card-bottom">
-            <ul>
-              <li class="tooltip-project swing" data-title="Description">
-                <button class="project-btn" aria-label="toggle description"><i
-                    class="project-icon fas fa-ellipsis-h fa-2x"></i></button>
-              </li>
-              <li class="tooltip-project swing" data-title="View Source">
-                <a href="https://github.com/JacobLopez-dev/cloudy" target=”_blank”><i
-                    class="fab fa-github fa-2x"></i></a>
-              </li>
-              <li class="tooltip-project swing" data-title="View Live">
-                <a href="https://fervent-mayer-b0de3f.netlify.app/index.html" target=”_blank”><i
-                    class="fas fa-external-link-alt fa-2x"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="card-top" id="project2">
-            <h3>Dynamic Homepage</h3>
-          </div>
-          <div class="project-card-content p2">
-            <div class="project-description">
-              <p>This project is meant to be the homepage when opening a browser.<br><br>
-                Local storage allows the user to save their name for a personalized greeting, a section for
-                today's focus and a todo list. It also integrates a weather api and displays current weather based on
-                users location.</p>
-            </div>
-          </div>
-          <div class="project-card-bottom">
-            <ul>
-              <li class="tooltip-project swing" data-title="Description">
-                <button class="project-btn" aria-label="toggle description"><i id="proj-btn"
-                    class="project-icon fas fa-ellipsis-h fa-2x"></i></button>
-              </li>
-              <li class="tooltip-project swing" data-title="View Source">
-                <a href="https://github.com/JacobLopez-dev/dynamicHomePage" target=”_blank”><i
-                    class="fab fa-github fa-2x"></i></a>
-              </li>
-              <li class="tooltip-project swing" data-title="View Live">
-                <a href="https://gallant-poitras-aacec5.netlify.app/" target=”_blank”><i
-                    class="fas fa-external-link-alt fa-2x"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- project 3 -->
-        <div class="project-card">
-          <div class="card-top" id="project3">
-            <h3>Project name</h3>
-          </div>
-          <div class="project-card-content">
-            <div class="project-description">
-              <p>Words describing project</p>
-            </div>
-          </div>
-          <div class="project-card-bottom">
-            <ul>
-              <li class="tooltip-project swing" data-title="Description">
-                <button class="project-btn" aria-label="toggle description"><i id="proj-btn1"
-                    class="project-icon fas fa-ellipsis-h fa-2x"></i></button>
-              </li>
-              <li class="tooltip-project swing" data-title="View Source">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-              </li>
-              <li class="tooltip-project swing" data-title="View Live">
-                <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- project 4 -->
-        <div class="project-card">
-          <div class="card-top" id="project4">
-            <h3>Project name</h3>
-          </div>
-          <div class="project-card-content">
-            <div class="project-description">
-              <p>
-              </p>
-            </div>
-          </div>
-          <div class="project-card-bottom">
-            <ul>
-              <li class="tooltip-project swing" data-title="Description">
-                <button class="project-btn" aria-label="toggle description"><i id="proj-btn1"
-                    class="project-icon fas fa-ellipsis-h fa-2x"></i></button>
-              </li>
-              <li class="tooltip-project swing" data-title="View Source">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-              </li>
-              <li class="tooltip-project swing" data-title="View Live">
-                <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <!-- Insert card elements from template here -->
       </article>
     </section>
     <section id="education">
@@ -486,7 +378,46 @@
       </article>
     </section>
   </main>
-  <script defer src="./scripts/script.js"></script>
+
+<!-- Template for scores. Populate this template and place it into a task list -->
+<template id="project-template">
+  <!-- Project 1 -->
+  <div class="project-card">
+    <div class="card-top">
+      <!-- title -->
+      <h3 class="project-card-title"></h3>
+    </div>
+    <div class="project-card-content">
+      <div class="project-description">
+        <!-- description -->
+        <p class="project-card-description"></p>
+      </div>
+    </div>
+    <div class="project-card-bottom">
+      <ul>
+        <!-- description btn -->
+        <li class="tooltip-project swing" data-title="Description">
+          <button class="project-btn" aria-label="toggle description"><i
+              class="project-icon fas fa-ellipsis-h fa-2x"></i></button>
+        </li>
+        <li class="tooltip-project swing" data-title="View Source">
+          <!-- Source code link -->
+          <a class="source-link" target=”_blank”><i
+              class="fab fa-github fa-2x"></i></a>
+        </li>
+        <li class="tooltip-project swing" data-title="View Live">
+          <!-- view live link -->
+          <a class="live-link" target=”_blank”><i
+              class="fas fa-external-link-alt fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+<!-- End template -->
+
+  <script defer type="module" src="./scripts/projects.js"></script>
+  <script defer type="module" src="./scripts/script.js"></script>
   <script defer src="https://kit.fontawesome.com/4c5c0db40a.js" crossorigin="anonymous"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>

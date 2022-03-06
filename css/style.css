@@ -161,6 +161,8 @@ article {
   color: white;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-color:rgb(131, 155, 149);
+
 }
 
 .card-content {
@@ -286,14 +288,6 @@ figure figcaption {
   overflow: hidden;
 }
 
-.p1 {
-  background-image: url('../images/cloudy.png');
-}
-
-.p2 {
-  background-image: url('../images/dynamic.png');
-}
-
 .project-description {
   background: rgba( 187, 181, 181, 0.5 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -326,7 +320,6 @@ figure figcaption {
   flex-direction: row;
   justify-content: flex-end;
   padding: 0.5em;
-  /* background-color: rgb(78, 78, 78); */
   background-color:rgb(131, 155, 149);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -353,20 +346,6 @@ figure figcaption {
   display: inline-block;
 }
 
-#project1 {
-  background-color: #59c2d6;
-}
-
-#project2 {
-  background-color: #839b97;
-}
-
-#project3 {
-  background-color: #23ae58;
-}
-#project4 {
-  background-color: #839b97;
-}
 /*Project tooltips*/
 .tooltip-project {
   position: relative;
