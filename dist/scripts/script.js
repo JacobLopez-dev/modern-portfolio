@@ -45,7 +45,6 @@ function navClose() {
 // Render project cards to tempplate from data file
 function renderProjects(){
   PROJECT_LIST.forEach(project => {
-    console.log(project)
     const projectCard = document.importNode(projectTemplate.content, true);
     const projectHeading = projectCard.querySelector('h3');
     const projectDescription = projectCard.querySelector('.project-card-description')
