@@ -95,7 +95,6 @@ main {
 section h2 {
   padding: 1em;
   color: white;
-  /* background-color: #839b95; */
   background-color: #1A374D;
 }
 
@@ -111,6 +110,7 @@ article {
 
 .project-list {
   display: grid;
+  max-width: 85%;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
@@ -123,8 +123,13 @@ article {
 /*About me*/
 .about {
   padding: 2em;
-  width: 95%;
   font-size: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.about p{
+  width: 75%;
 }
 
 .about p:first-child {
@@ -140,7 +145,7 @@ article {
 
 /*Cards*/
 .card {
-  width: 80%;
+  width: 75%;
   margin: 50px auto 50px auto;
   display: grid;
   grid-template-rows: 50px auto;
@@ -185,12 +190,12 @@ article {
   border-bottom-right-radius: 25px;
 }
 
-#infoTech-top {
+.experience-card-top {
   background-color: #55a3d6;
 }
 
-#cna-top {
-  background-color: #e51b24;
+.experience-card-top {
+  background-color: #55a3d6;
 }
 
 #project-top {
@@ -219,7 +224,7 @@ article {
 }
 /*Skill card*/
 .skill-card {
-  width: 80%;
+  width: 75%;
   margin: 50px auto 50px auto;
   display: grid;
   grid-template-rows: 50px auto;
@@ -297,7 +302,7 @@ figure figcaption {
   position: relative;
   transition: all 0.3s ease-out;
   height: 100%;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 
@@ -451,10 +456,6 @@ figure figcaption {
 .resume p {
   font-size: 20px;
   font-weight: 400;
-}
-
-#resume-top {
-  background-color: #55a3d6;
 }
 
 .btn {
