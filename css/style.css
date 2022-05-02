@@ -497,20 +497,11 @@ figure figcaption {
 /*Contact info*/
 .connect {
   padding: 2em;
-  height: 100vh;
-}
-
-.connect ul {
-  list-style: none;
-}
-
-.connect li {
-  display: flex;
-  align-items: center;
-}
-
-.connect li > * {
-  margin: 10px;
+  height: fit-content;
+  display: grid;
+  /* max-width: 85%; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1em;
 }
 
 .connect a {
@@ -518,14 +509,31 @@ figure figcaption {
   color: black;
 }
 
+.connect-icon{
+  display: grid;
+  place-content: center;
+  text-align: center;
+  width: 75%;
+  padding: 1em;
+  margin: 50px auto 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background: rgba( 187, 181, 181, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 25px;
+}
+
 .connect a:hover {
   text-decoration: none;
-  color: #839b95;
+  color: #dce1e0;
 }
 
 .twitter-feed {
   overflow: scroll;
+  grid-column: 2/4;
 }
+
 
 /* Animations */
 @keyframes slideInFromLeft {
@@ -704,5 +712,15 @@ figure figcaption {
   .twitter-feed {
     display: flex;
     justify-content: center;
+    grid-column: auto;
   }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .twitter-feed {
+      grid-column: auto;
+    }
 }
