@@ -527,6 +527,8 @@ figure figcaption {
 .connect a:hover {
   text-decoration: none;
   color: #dce1e0;
+  transform: translateY(-10px);
+  transition: ease-in-out .3s;
 }
 
 .twitter-feed {
